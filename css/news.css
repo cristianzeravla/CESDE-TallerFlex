@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    background: rgb(6, 0, 0);
+    background: radial-gradient(circle, rgba(6, 0, 0, 1) 0%, rgba(207, 3, 31, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    color: #fff;
+}
+
+.logo img {
+    width: 8%;
+    height: 6%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 1rem;
+    background: rgb(6, 0, 0);
+    background: linear-gradient(90deg, rgba(6, 0, 0, 1) 0%, rgba(163, 3, 25, 1) 88%);
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 1rem;
+    background: rgb(6, 0, 0);
+    background: linear-gradient(90deg, rgba(6, 0, 0, 1) 0%, rgba(163, 3, 25, 1) 88%);
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+}
+
+/* menu */
+
+.menu {
+    display: flex;
+    margin: 0 4rem;
+    list-style-type: none;
+}
+
+.menu ul li {
+    margin: 0 20rem;
+    justify-content: space-evenly;
+}
+
+.tabs-menu {
+    color: #fff;
+    position: relative;
+    margin-left: auto;
+    margin-right: -4rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 150%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.533);
+}
+
+.tabs-menu a {
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+}
+
+.menu a:hover {
+    color: white;
+    transform: translate(-3px) scale(1.5);
+}
+
+/* container-content */
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+}
+
+.content {
+    padding: 2rem 0;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.content p {
+    padding: 4rem;
+    font-size: 18px;
+}
+
+.images {
+    display: flex;
+    width: 90%;
+    height: 25%;
+    border: 1px solid white;
+    margin: 1rem;
+}
+
+.images img {
+    padding: 0.5rem;
+    width: 20%;
+    height: 20%;
+    min-width: 160px;
+    min-height: 160px;
+}
+
+.images p {
+    width: 90%;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.images img:hover {
+    transform: scale(1.2);
+}
